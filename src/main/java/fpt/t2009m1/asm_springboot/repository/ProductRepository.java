@@ -1,7 +1,7 @@
-package com.example.springboot_assignment.repository;
+package fpt.t2009m1.asm_springboot.repository;
 
-import com.example.springboot_assignment.entity.Product;
-import com.example.springboot_assignment.entity.myenum.ProductStatus;
+import fpt.t2009m1.asm_springboot.entity.Product;
+import fpt.t2009m1.asm_springboot.entity.myenum.ProductStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

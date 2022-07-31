@@ -1,9 +1,9 @@
-package com.example.springboot_assignment.seeder;
+package fpt.t2009m1.asm_springboot.seeder;
 
-import com.example.springboot_assignment.entity.*;
-import com.example.springboot_assignment.entity.myenum.OrderSimpleStatus;
-import com.example.springboot_assignment.repository.OrderRepository;
-import com.example.springboot_assignment.util.NumberUtil;
+import fpt.t2009m1.asm_springboot.entity.*;
+import fpt.t2009m1.asm_springboot.entity.myenum.OrderSimpleStatus;
+import fpt.t2009m1.asm_springboot.repository.OrderRepository;
+import fpt.t2009m1.asm_springboot.util.NumberUtil;
 import com.github.javafaker.Faker;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

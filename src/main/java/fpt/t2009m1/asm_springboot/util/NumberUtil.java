@@ -1,4 +1,4 @@
-package com.example.springboot_assignment.util;
+package fpt.t2009m1.asm_springboot.util;
 
 public class NumberUtil {
 

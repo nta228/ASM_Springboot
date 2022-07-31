@@ -1,4 +1,4 @@
-package com.example.springboot_assignment.seeder;
+package fpt.t2009m1.asm_springboot.seeder;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

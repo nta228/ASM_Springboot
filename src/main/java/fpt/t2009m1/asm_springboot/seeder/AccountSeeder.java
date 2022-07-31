@@ -1,8 +1,8 @@
-package com.example.springboot_assignment.seeder;
+package fpt.t2009m1.asm_springboot.seeder;
 
-import com.example.springboot_assignment.entity.Account;
-import com.example.springboot_assignment.entity.myenum.AccountStatus;
-import com.example.springboot_assignment.repository.AccountRepository;
+import fpt.t2009m1.asm_springboot.entity.Account;
+import fpt.t2009m1.asm_springboot.entity.myenum.AccountStatus;
+import fpt.t2009m1.asm_springboot.repository.AccountRepository;
 import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

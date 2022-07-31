@@ -1,9 +1,9 @@
-package com.t2010a.baovemuaxuan.config;
+package fpt.t2009m1.asm_springboot.config;
 
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import com.t2010a.baovemuaxuan.util.JwtUtil;
+import fpt.t2009m1.asm_springboot.util.JwtUtil;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

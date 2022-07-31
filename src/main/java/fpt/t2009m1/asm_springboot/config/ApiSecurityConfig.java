@@ -1,4 +1,4 @@
-package com.t2010a.baovemuaxuan.config;
+package fpt.t2009m1.asm_springboot.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

@@ -1,10 +1,10 @@
-package com.example.springboot_assignment.service;
+package fpt.t2009m1.asm_springboot.service;
 
-import com.example.springboot_assignment.entity.Order;
-import com.example.springboot_assignment.entity.OrderDetail;
-import com.example.springboot_assignment.entity.Product;
-import com.example.springboot_assignment.repository.OrderRepository;
-import com.example.springboot_assignment.repository.ProductRepository;
+import fpt.t2009m1.asm_springboot.entity.Order;
+import fpt.t2009m1.asm_springboot.entity.OrderDetail;
+import fpt.t2009m1.asm_springboot.entity.Product;
+import fpt.t2009m1.asm_springboot.repository.OrderRepository;
+import fpt.t2009m1.asm_springboot.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -30,30 +30,13 @@ public class OrderService{
         }
         Order order = orderRepository.getShoppingCart(userId);
         Set<OrderDetail> orderDetails = order.getOrderDetails();
-//        HashMap<Long, OrderDetail> map = new HashMap<Long, OrderDetail>();
-//        //fill in map
-//        for(OrderDetail entry : orderDetails)
-//        {
-//            map.put(entry.getProduct().getId(), entry);
-//        }
-//
-//        for (int i =0 ; i < orderDetails.size() - 1 ;i++){
-//            //neu chua co sp trong gio hang thi them vao
-//            // con co roi thi cong don ok
-//        }
         boolean exist = false;
         for(OrderDetail entry : orderDetails)
-        {
-//            if(entry.getProduct().getId().equals(productId)){
-//                entry.setQuantity(entry.getQuantity() + quantity);
-//                exist = true;
-//            }
-        }
+
         if(!exist){
             OrderDetail orderDetail = new OrderDetail();
             orderDetails.add(orderDetail);
         }
-        //save
          return order;
     }
 }

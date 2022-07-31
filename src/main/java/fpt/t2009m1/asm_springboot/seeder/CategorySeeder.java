@@ -1,7 +1,7 @@
-package com.example.springboot_assignment.seeder;
+package fpt.t2009m1.asm_springboot.seeder;
 
-import com.example.springboot_assignment.entity.Category;
-import com.example.springboot_assignment.repository.CategoryRepository;
+import fpt.t2009m1.asm_springboot.entity.Category;
+import fpt.t2009m1.asm_springboot.repository.CategoryRepository;
 import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

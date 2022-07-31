@@ -1,4 +1,4 @@
-package com.example.springboot_assignment.entity;
+package fpt.t2009m1.asm_springboot.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;

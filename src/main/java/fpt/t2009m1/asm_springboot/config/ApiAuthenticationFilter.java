@@ -1,10 +1,10 @@
-package com.t2010a.baovemuaxuan.config;
+package fpt.t2009m1.asm_springboot.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import com.t2010a.baovemuaxuan.entity.dto.CredentialDto;
-import com.t2010a.baovemuaxuan.entity.dto.LoginDto;
-import com.t2010a.baovemuaxuan.util.JwtUtil;
+import fpt.t2009m1.asm_springboot.entity.dto.CredentialDto;
+import fpt.t2009m1.asm_springboot.entity.dto.LoginDto;
+import fpt.t2009m1.asm_springboot.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,9 +1,9 @@
-package com.example.springboot_assignment.seeder;
+package fpt.t2009m1.asm_springboot.seeder;
 
-import com.example.springboot_assignment.entity.Category;
-import com.example.springboot_assignment.entity.Product;
-import com.example.springboot_assignment.entity.myenum.ProductStatus;
-import com.example.springboot_assignment.repository.ProductRepository;
+import fpt.t2009m1.asm_springboot.entity.Category;
+import fpt.t2009m1.asm_springboot.entity.Product;
+import fpt.t2009m1.asm_springboot.entity.myenum.ProductStatus;
+import fpt.t2009m1.asm_springboot.repository.ProductRepository;
 import com.github.javafaker.Faker;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

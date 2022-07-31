@@ -1,4 +1,4 @@
-package com.t2010a.baovemuaxuan.entity.dto;
+package fpt.t2009m1.asm_springboot.entity.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

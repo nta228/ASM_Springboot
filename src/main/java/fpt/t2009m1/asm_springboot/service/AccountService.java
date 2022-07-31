@@ -1,11 +1,11 @@
-package com.example.springboot_assignment.service;
+package fpt.t2009m1.asm_springboot.service;
 
-import com.example.springboot_assignment.entity.Account;
-import com.example.springboot_assignment.entity.dto.AccountDto;
-import com.example.springboot_assignment.entity.dto.CredentialDto;
-import com.example.springboot_assignment.entity.myenum.AccountStatus;
-import com.example.springboot_assignment.repository.AccountRepository;
-import com.example.springboot_assignment.util.JWTUtil;
+import fpt.t2009m1.asm_springboot.entity.Account;
+import fpt.t2009m1.asm_springboot.entity.dto.AccountDto;
+import fpt.t2009m1.asm_springboot.entity.dto.CredentialDto;
+import fpt.t2009m1.asm_springboot.entity.myenum.AccountStatus;
+import fpt.t2009m1.asm_springboot.repository.AccountRepository;
+import fpt.t2009m1.asm_springboot.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -69,15 +69,15 @@ public class AccountService implements UserDetailsService {
     }
 
     public CredentialDto generateCredential(UserDetails userDetail, HttpServletRequest request) {
-        String accessToken = JWTUtil.generateToken(userDetail.getUsername(),
+        String accessToken = JwtUtil.generateToken(userDetail.getUsername(),
                 userDetail.getAuthorities().iterator().next().getAuthority(),
                 request.getRequestURI(),
-                JWTUtil.ONE_DAY * 7);
+                JwtUtil.ONE_DAY * 7);
 
-        String refreshToken = JWTUtil.generateToken(userDetail.getUsername(),
+        String refreshToken = JwtUtil.generateToken(userDetail.getUsername(),
                 userDetail.getAuthorities().iterator().next().getAuthority(),
                 request.getRequestURI(),
-                JWTUtil.ONE_DAY * 14);
+                JwtUtil.ONE_DAY * 14);
         return new CredentialDto(accessToken, refreshToken);
     }
 
@@ -91,30 +91,6 @@ public class AccountService implements UserDetailsService {
 
     public Page<Account> findByRole(String role, int page, int limit){
         return accountRepository.findAllByRoleEquals(role, PageRequest.of(page, limit));
-    }
-
-//    public Page<Account> findByCreateAt(LocalDateTime createAt, int page, int limit){
-//        return accountRepository.findAllByCreateAt(createAt, PageRequest.of(page, limit));
-//    }
-//
-//    public Page<Account> findByDeleteAt(LocalDateTime deleteAt, int page, int limit){
-//        return accountRepository.findAllByDeleteAt(deleteAt, PageRequest.of(page, limit));
-//    }
-//
-//    public Page<Account> findByUpdateAt(LocalDateTime updateAt, int page, int limit){
-//        return accountRepository.findAllByUpdateAt(updateAt, PageRequest.of(page, limit));
-//    }
-
-    public Page<Account> findByCreateBetween(LocalDateTime min, LocalDateTime max, int page, int  limit){
-        return accountRepository.findAllByCreateAtBetween(min, max, PageRequest.of(page, limit));
-    }
-
-    public Page<Account> findByUpdateBetween(LocalDateTime min, LocalDateTime max, int page, int  limit){
-        return accountRepository.findAllByUpdateAtBetween(min, max, PageRequest.of(page, limit));
-    }
-
-    public Page<Account> findByDeleteBetween(LocalDateTime min, LocalDateTime max, int page, int  limit){
-        return accountRepository.findAllByDeleteAtBetween(min, max, PageRequest.of(page, limit));
     }
 
     public Optional<Account> findById(String id){

@@ -1,6 +1,6 @@
-package com.example.springboot_assignment.api;
+package fpt.t2009m1.asm_springboot.restapi;
 
-import com.example.springboot_assignment.service.OrderService;
+import fpt.t2009m1.asm_springboot.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;

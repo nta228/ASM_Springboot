@@ -1,7 +1,7 @@
-package com.example.springboot_assignment.entity;
+package fpt.t2009m1.asm_springboot.entity;
 
-import com.example.springboot_assignment.entity.base.BaseEntity;
-import com.example.springboot_assignment.entity.myenum.OrderSimpleStatus;
+import fpt.t2009m1.asm_springboot.entity.base.BaseEntity;
+import fpt.t2009m1.asm_springboot.entity.myenum.OrderSimpleStatus;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 
@@ -18,8 +18,6 @@ import java.util.Set;
 @Table(name = "orders")
 public class Order extends BaseEntity {
     @Id
-//    @GeneratedValue(generator = "uuid")
-//    @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "account_id")

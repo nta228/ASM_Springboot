@@ -1,4 +1,4 @@
-package com.example.springboot_assignment.config;
+package fpt.t2009m1.asm_springboot.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,7 +27,7 @@ public class SwaggerConfig {
         final String swaggerToken = "";
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.springbootassignment.api"))
+                .apis(RequestHandlerSelectors.basePackage("fpt.t2009m1.asm_springboot.restapi"))
                 .paths(PathSelectors.any())
                 .build()
                 .directModelSubstitute(ResponseEntity.class, Void.class)
@@ -52,7 +52,7 @@ public class SwaggerConfig {
     private SecurityContext securityContext() {
         return SecurityContext.builder()
                 .securityReferences(defaultAuth())
-                .forPaths(PathSelectors.regex("/**"))
+                .forPaths(PathSelectors.regex("/*"))
                 .build();
     }
 

@@ -1,8 +1,8 @@
-package com.example.springboot_assignment.service;
+package fpt.t2009m1.asm_springboot.service;
 
-import com.example.springboot_assignment.entity.Product;
-import com.example.springboot_assignment.entity.myenum.ProductStatus;
-import com.example.springboot_assignment.repository.ProductRepository;
+import fpt.t2009m1.asm_springboot.entity.Product;
+import fpt.t2009m1.asm_springboot.entity.myenum.ProductStatus;
+import fpt.t2009m1.asm_springboot.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

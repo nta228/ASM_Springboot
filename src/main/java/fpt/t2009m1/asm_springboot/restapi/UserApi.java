@@ -1,6 +1,6 @@
-package com.t2010a.baovemuaxuan.restapi;
+package fpt.t2009m1.asm_springboot.restapi;
 
-import com.t2010a.baovemuaxuan.entity.Product;
+import fpt.t2009m1.asm_springboot.entity.Product;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;

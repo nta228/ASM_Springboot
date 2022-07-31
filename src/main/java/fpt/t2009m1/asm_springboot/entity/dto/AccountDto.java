@@ -1,6 +1,6 @@
-package com.example.springboot_assignment.entity.dto;
+package fpt.t2009m1.asm_springboot.entity.dto;
 
-import com.example.springboot_assignment.entity.myenum.AccountStatus;
+import fpt.t2009m1.asm_springboot.entity.myenum.AccountStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
